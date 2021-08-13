@@ -1,6 +1,7 @@
 :root {
     --navbarfont: Lexend, sans-serif;
     --headerfont: Montesserat, sans-serif;
+    --font: Raleway, sans-serif;
 }
 
 
@@ -43,8 +44,7 @@
 
 .headertext {
     text-align: center;
-    font-family: var(--headerfont);
+    font-family: var(--font);
     color: white;
     font-size: 50px;
-
 }

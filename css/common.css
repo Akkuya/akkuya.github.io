@@ -49,6 +49,11 @@ a {
     transition: all 1s ease-in-out;
 }
 
-.navlink:hover {
-    transform: scale(125%);
+.navlink:hover {transform: scale(125%);}
+
+.header {
+    text-align: center;
+    font-family: var(--font);
+    color: white;
+    font-size: 50px;  
 }

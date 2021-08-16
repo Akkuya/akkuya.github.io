@@ -1,56 +1,8 @@
-:root {
-    --navbarfont: Lexend, sans-serif;
-    --headerfont: Montesserat, sans-serif;
-    --font: Raleway, sans-serif;
-}
-a {
-    text-decoration: none;
-    color: transparent;
-}
-
-.navlinktext {
-    text-decoration: none;
-    display: block;
-    color: white;
-    transition: all 1s ease-in-out;
-}
-
-.navlinktext:hover {
-    color: rgb(182, 116, 243);
-}
-
-.navbar {
-    list-style-type: none;
-    justify-content: center;
-    display: flex;
-    background-color: rgb(43, 39, 39);
-    position: relative;
-    width: 100%;
-    padding: 0; 
-    margin-top: 0; 
-    border-radius: 10px;
-}
-
-.navlink {
-    font-family: var(--navbarfont);
-    text-align: left;
-    position: relative;
-    display: inline;    
-    padding: 20px 20px;
-    border-radius: inherit;
-    transition: all 1s ease-in-out;
-}
-
-
 .headertext {
     text-align: center;
     font-family: var(--font);
     color: white;
     font-size: 50px;
-}
-
-.navlink:hover {
-    transform: scale(125%);   
 }
 
 
@@ -110,6 +62,7 @@ input::-webkit-input-placeholder {
     display: inline-block;
     padding: 10px 40px;
     font-family: var(--font);
+    border-radius: 5px;
     margin: 10px 10px;
     text-align: center;
     transition: all 1s ease-in-out;

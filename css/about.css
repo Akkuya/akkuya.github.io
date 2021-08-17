@@ -81,6 +81,7 @@
     display: flex;
     justify-content: center;
     place-items: center;
+    margin-top: 20px;
 }
 ::-webkit-scrollbar {
     width: 10px;

@@ -58,3 +58,18 @@ a {
     color: white;
     font-size: 50px;  
 }
+::-webkit-scrollbar {
+    width: 10px;
+    padding-right: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #624779;   
+}
+  

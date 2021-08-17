@@ -65,37 +65,39 @@
     color: white;
 }
 
-.body2 {
-    font-family: var(--bodyfont);
-    color: bisque;
-    display: block;
-    width: 350px;
-    font-size: 20px; 
-    margin-left: 30px; 
-}
 
-.coding {
-    border-radius: 10px;
-}
-.content-wrap {
+.info-wrap {
     display: flex;
     justify-content: center;
     place-items: center;
-    margin-top: 20px;
+    margin-bottom: 200px;
 }
-::-webkit-scrollbar {
-    width: 10px;
-    padding-right: 100px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    ; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #624779;   
-  }
-  
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 100px 400px;
+    grid-column-gap: 10px;
+    justify-items: center;
+    place-items: center;
+}
+
+.body2 {
+    font-family: var(--bodyfont);
+    color: bisque;
+    width: 350px;
+    text-align:center;
+    font-size: 20px; 
+}
+
+.self-img {
+    border-radius: 10px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+

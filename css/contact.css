@@ -63,25 +63,27 @@ input::-webkit-input-placeholder {
     padding: 10px 40px;
     font-family: var(--font);
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 2% 2%;
     text-align: center;
     transition: all 1s ease-in-out;
 }
 
+.method:hover {
+    transform: scale(120%);
+}
+
 .mail {
-    background-color: rgb(233, 111, 111);
-    
+    background-color: rgb(233, 111, 111); 
 }
 
 .twitter {
     background-color: rgb(148, 200, 245);
 }
+
 .steam {
     background-color:rgb(73, 54, 73);
 }
-.method:hover {
-    transform: scale(120%);
-}
+
 
 .or {
     text-align: center;

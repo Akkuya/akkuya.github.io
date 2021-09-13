@@ -73,10 +73,6 @@
     Profile Nav modifications
 ===============================================*/
 
-.nav-wrap[data-v-1cc2919e] {
-  border-radius: 10px;
-}
-
 .nav.container > .link {
   color: var(--text-color);
 }

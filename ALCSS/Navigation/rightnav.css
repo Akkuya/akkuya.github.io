@@ -41,7 +41,8 @@
 
 .browse-wrap>.dropdown {
 	z-index: 999;
-	margin-left: 100px;
+	margin-left: -280px;
+	margin-top: -30px;
 }
 
 .browse-wrap>.dropdown:before {
@@ -49,8 +50,13 @@
 }
 
 #nav>.wrap>.user>.user-wrap>.dropdown {
-	left: 80px;
-	margin-top: -55px;
+	margin-left: -180px;
+	margin-right: 150px;
+	margin-top: -50px;
+}
+
+.user-wrap >.dropdown:before {
+	content: none !important;
 }
 
 #nav>.wrap>.user {

@@ -50,8 +50,7 @@
 }
 
 #nav>.wrap>.user>.user-wrap>.dropdown {
-	margin-left: -180px;
-	margin-right: 150px;
+	margin-right: calc(200px - 90px + 37px);
 	margin-top: -50px;
 }
 

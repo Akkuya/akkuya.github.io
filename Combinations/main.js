@@ -26,10 +26,9 @@ function clear(id) {
     console.log(items);
     const output = document.getElementById('output' + id.toString());
     output.innerHTML = items[id];
-    return false;
 }
 
-var form = document.getElementById("clear0"); 
+var form = document.getElementById("clear1"); 
 function handleForm(event) { 
     event.preventDefault(); 
 } 

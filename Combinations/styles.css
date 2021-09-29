@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body {
+    background: rgb(53, 51, 51);
+    font-family: Poppins;
+}
+
+
+input {
+    background: purple;
+    border: none;
+    color: white;
+    font-size: larger;
+}
+
+div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+}
+
+form {
+    margin-bottom: 20px;
+    
+}
+
+#output0, #output1, #output2, #output3, #output4 {
+    background:rgb(34, 30, 30);
+    display: inline;
+    color: white;
+    display: block;
+    width: 400px;
+    height: 2rem;
+    
+}
+
+
+.values {
+    background: rgb(34, 30, 30);
+    width: 100vw;
+    height: 400px;
+    white-space: pre-wrap;
+    color: white;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinations</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div>
+        <form onsubmit="return push(0)">
+            <input id="text0" type="text">
+            <input type="submit" value='Add Value'>
+            <h2 id='output0'></h2>
+        </form>
+
+
+            <form onsubmit="clear(0); return false; ">
+                <input type="submit" value="Clear">
+            </form>
+
+
+        <form onsubmit="return push(1)">
+            <input id="text1" type="text">
+            <input type="submit" value='Add Value'>
+            <h2 id='output1'></h2>
+        </form>
+
+
+        <form onsubmit="return clear(1)" class="submit">
+            <input type="submit" value="Clear">
+        </form>
+
+
+        <form onsubmit="return push(2)">
+            <input id="text2" type="text">
+            <input type="submit" value='Add Value'>
+            <h2 id='output2'></h2>
+        </form>
+
+
+        <form onsubmit="return clear(2)" class="submit">
+            <input type="submit" value="Clear">
+        </form>
+
+
+        <form onsubmit="return push(3)">
+            <input id="text3" type="text">
+            <input type="submit" value='Add Value'>
+            <h2 id='output3'></h2>
+        </form>
+
+
+        <form onsubmit="return clear(3)" class="submit">
+            <input type="submit" value="Clear">
+        </form>
+
+        <form onsubmit="return push(4)">
+            <input id="text4" type="text">
+            <input type="submit" value='Add Value'>
+            <h2 id='output4'></h2>
+        </form>
+
+        <form onsubmit="return clear(4)" class="submit">
+            <input type="submit" value="Clear">
+        </form>
+    </div>
+
+
+    <button type='button' id='calculate'>
+        CALCULATE
+    </button>
+
+
+    <div class='values' id='values'>
+
+    </div>
+
+    <script src='main.js'></script>
+</body>
+</html>

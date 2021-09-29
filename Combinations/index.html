@@ -10,62 +10,48 @@
 </head>
 <body>
     <div>
-        <form onsubmit="return push(0)">
-            <input id="text0" type="text">
-            <input type="submit" value='Add Value'>
-            <h2 id='output0'></h2>
-        </form>
-
-
-            <form onsubmit="clear(0); return false; ">
-                <input type="submit" value="Clear">
+        <div class="wrapper">
+            <form onsubmit="return push(0)">
+                <input id="text0" type="text">
+                <input type="submit" value='Add Value'>
+                <h2 id='output0'></h2>
             </form>
-
-
-        <form onsubmit="return push(1)">
-            <input id="text1" type="text">
-            <input type="submit" value='Add Value'>
-            <h2 id='output1'></h2>
-        </form>
-
-
-        <form onsubmit="return clear(1)" class="submit">
-            <input type="submit" value="Clear">
-        </form>
-
-
-        <form onsubmit="return push(2)">
-            <input id="text2" type="text">
-            <input type="submit" value='Add Value'>
-            <h2 id='output2'></h2>
-        </form>
-
-
-        <form onsubmit="return clear(2)" class="submit">
-            <input type="submit" value="Clear">
-        </form>
-
-
-        <form onsubmit="return push(3)">
-            <input id="text3" type="text">
-            <input type="submit" value='Add Value'>
-            <h2 id='output3'></h2>
-        </form>
-
-
-        <form onsubmit="return clear(3)" class="submit">
-            <input type="submit" value="Clear">
-        </form>
-
-        <form onsubmit="return push(4)">
-            <input id="text4" type="text">
-            <input type="submit" value='Add Value'>
-            <h2 id='output4'></h2>
-        </form>
-
-        <form onsubmit="return clear(4)" class="submit">
-            <input type="submit" value="Clear">
-        </form>
+                <form onsubmit="return clear(0)" id='clear0'>
+                    <input type="submit" value="Clear" class='clear'>
+                </form>
+            <form onsubmit="return push(1)">
+                <input id="text1" type="text">
+                <input type="submit" value='Add Value'>
+                <h2 id='output1'></h2>
+            </form>
+            <form onsubmit="return clear(1)" id='clear1'>
+                <input type="submit" value="Clear" class='clear'>
+            </form>
+            <form onsubmit="return push(2)">
+                <input id="text2" type="text">
+                <input type="submit" value='Add Value'>
+                <h2 id='output2'></h2>
+            </form>
+            <form onsubmit="return clear(2)" id='clear2'>
+                <input type="submit" value="Clear" class='clear'>
+            </form>
+            <form onsubmit="return push(3)">
+                <input id="text3" type="text">
+                <input type="submit" value='Add Value'>
+                <h2 id='output3'></h2>
+            </form>
+            <form onsubmit="return clear(3)" id='clear3'>
+                <input type="submit" value="Clear" class='clear'>
+            </form>
+            <form onsubmit="return push(4)">
+                <input id="text4" type="text">
+                <input type="submit" value='Add Value'>
+                <h2 id='output4'></h2>
+            </form>
+            <form onsubmit="return clear(4)" id='clear'>
+                <input type="submit" value="Clear" class='clear'>
+            </form>
+        </div>
     </div>
 
 

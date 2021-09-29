@@ -19,6 +19,7 @@ function push(id) {
 }
 
 
+
 function clear(id) {
     // const btn = document.getElementById("clear" + id.toString());
     items[id] = [];
@@ -28,6 +29,11 @@ function clear(id) {
     return false;
 }
 
+var form = document.getElementById("clear0"); 
+function handleForm(event) { 
+    event.preventDefault(); 
+} 
+form.addEventListener('submit', handleForm);
 
 var combination;
 const calcbtn = document.getElementById('calculate');
@@ -36,6 +42,7 @@ calcbtn.addEventListener('click', calc);
 
 function calc() {
     const outputvalues = document.getElementById('values');
+    outputvalues.innerHTML = '';
     var count = 0;
     for (var var1 in items[0]) {
         combination = [items[0][var1]];

@@ -1,28 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
+@keyframes rainbow-bg{
+    100%,0%{
+        background-color: rgb(243, 86, 86);
+    }
+    8%{
+        background-color: rgb(255, 172, 89);
+    }
+    16%{
+        background-color: rgb(248, 248, 88);
+    }
+    25%{
+        background-color: rgb(171, 247, 96);
+    }
+    33%{
+        background-color: rgb(104, 253, 104);
+    }
+    41%{
+        background-color: rgb(104, 255, 180);
+    }
+    50%{
+        background-color: rgb(109, 255, 255);
+    }
+    58%{
+        background-color: rgb(97, 176, 255);
+    }
+    66%{
+        background-color: rgb(102, 102, 255);
+    }
+    75%{
+        background-color: rgb(182, 118, 247);
+    }
+    83%{
+        background-color: rgb(250, 109, 250);
+    }
+    91%{
+        background-color: rgb(255, 117, 186)a;
+    }
+}
+:root {
+    --scrollbar-width: 10px;
+    --scrollbar-spacing: 3px;
+}
 body {
     background: rgb(53, 51, 51);
     font-family: Poppins;
+    overflow-x: hidden;
+    
 }
 
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
 
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(27, 25, 25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(95, 87, 87);
+    border-radius: 10px;
+}
 input {
     background: purple;
     border: none;
     color: white;
     font-size: larger;
+    margin: 0 10px;
+    max-height: 2.5rem;
+    width: 100px;
+    border-radius: 1rem;
 }
 
-div {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    border: 2px black solid;
+input[type='text'] {
+    background: rgb(168, 168, 219);
+    width: initial
+}
+
+h2 {
+    margin-top: -1px;
 }
 
 form {
     margin-bottom: 20px;
+    display: flex;
     
 }
 
@@ -30,17 +91,57 @@ form {
     background:rgb(34, 30, 30);
     display: inline;
     color: white;
-    display: block;
+    display: inline-block;
     width: 400px;
     height: 2rem;
     
 }
 
+.submit {
+    margin-top: -20px;
+    height: 30px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
 
 .values {
     background: rgb(34, 30, 30);
-    width: 100vw;
+    width: calc(100vw - (var(--scrollbar-width) + var(--scrollbar-spacing)));
     height: 400px;
+    margin-top: -20px;
     white-space: pre-wrap;
     color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    
+}
+
+
+#calculate {
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 0.7rem 1rem;
+    background: red;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 10px;
+    animation-name: rainbow-bg;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all 1s ease;
+}
+
+
+#calculate:hover {
+    transform: scale(1.2);
+    margin-left: 45%;
 }

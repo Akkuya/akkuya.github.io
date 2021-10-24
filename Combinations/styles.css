@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@keyframes rainbow-bg{
+/*
+ @keyframes rainbow-bg{
     100%,0%{
         background-color: rgb(243, 86, 86);
     }
@@ -44,13 +45,12 @@
 body {
     background: rgb(53, 51, 51);
     font-family: Poppins;
-    overflow-x: hidden;
+    overflow-x: show;
     
 }
 
 ::-webkit-scrollbar {
     width: var(--scrollbar-width);
-
 }
 
 ::-webkit-scrollbar-track {
@@ -74,7 +74,7 @@ input {
 
 input[type='text'] {
     background: rgb(168, 168, 219);
-    width: initial
+    width: initial;
 }
 
 h2 {
@@ -145,9 +145,48 @@ form {
     transform: scale(1.2);
     margin-left: 45%;
     color: white;
+    cursor: pointer;
     box-shadow: 5px 10px rgb(241, 233, 233);
 }
 
 #clear0, #clear1, #clear2, #clear3, #clear {
-    visibility: hidden;
+    visibility: show;
+} */
+
+
+:root {
+    --scrollbar-width: 1rem;
+    --scrollbar-spacing: 0.2rem;
+}
+body {
+    background-color: hsl(0, 0%, 29%);
+    font-family: Poppins;
+}
+
+.output {
+    color: white;
+    background-color: rgb(126, 125, 125);
+    width: 25em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    margin-right: 1rem;
+}
+
+input[type='text'] {
+    height: 1rem;
+}
+form {
+    display: flex;
+    margin: 0.5rem;
+}
+
+#calculate {
+    margin-left: 50%;
+    transform: translate(-50%);
 }

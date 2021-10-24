@@ -13,33 +13,27 @@ function push(id) {
     else {
         console.log("Empty Submission");
     }
-
-    
     return false; // stop submission
 }
 
 
-
-function clear(id) {
-    // const btn = document.getElementById("clear" + id.toString());
+// This doesn't work ffs
+function emptyarray(id) {
     items[id] = [];
     console.log(items);
     const output = document.getElementById('output' + id.toString());
-    output.innerHTML = items[id];
+    output.innerHTML = items[id];    
 }
 
-var form = document.getElementById("clear1"); 
-function handleForm(event) { 
-    event.preventDefault(); 
-} 
-form.addEventListener('submit', handleForm);
 
-var combination;
-const calcbtn = document.getElementById('calculate');
 
-calcbtn.addEventListener('click', calc);
 
+
+
+
+// FIND THE COMBINATIONS. (Please do not open the function if you dont want your eyes to be burned.)
 function calc() {
+    var combination;
     const outputvalues = document.getElementById('values');
     outputvalues.innerHTML = '';
     var count = 0;
@@ -93,4 +87,12 @@ function calc() {
     console.log(count);
 }
 
+const calcbtn = document.getElementById('calculate');
+calcbtn.addEventListener('click', calc);
 
+
+document.getElementById("export").addEventListener("click",function(){
+    let dataUri = 'data:text/html,' 
+        + encodeURIComponent(document.getElementById("fileContents").textContent);
+    this.href = dataUri;        
+},false)

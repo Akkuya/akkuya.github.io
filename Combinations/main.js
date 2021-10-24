@@ -93,6 +93,6 @@ calcbtn.addEventListener('click', calc);
 
 document.getElementById("export").addEventListener("click",function(){
     let dataUri = 'data:text/html,' 
-        + encodeURIComponent(document.getElementById("fileContents").textContent);
+        + encodeURIComponent(document.getElementById("values").textContent);
     this.href = dataUri;        
 },false)

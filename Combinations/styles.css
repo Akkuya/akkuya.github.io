@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-/*
+
  @keyframes rainbow-bg{
     100%,0%{
         background-color: rgb(243, 86, 86);
@@ -38,6 +38,7 @@
         background-color: rgb(255, 117, 186)a;
     }
 }
+/*
 :root {
     --scrollbar-width: 10px;
     --scrollbar-spacing: 3px;
@@ -161,14 +162,29 @@ form {
 body {
     background-color: hsl(0, 0%, 29%);
     font-family: Poppins;
+    overflow-x: hidden;
 }
 
 .output {
     color: white;
     background-color: rgb(126, 125, 125);
     width: 25em;
+    overflow-x: scroll;
 }
 
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(27, 25, 25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(95, 87, 87);
+    border-radius: 10px;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -189,4 +205,86 @@ form {
 #calculate {
     margin-left: 50%;
     transform: translate(-50%);
+    border: none;
+    display: inline-block;
+    height: 2rem;
+    border-radius: 10px;
+    animation: rainbow;
+    animation-name: rainbow-bg;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all 1s ease;
+}
+
+
+#calculate:hover {
+    transform: scale(1.2);
+    margin-left: 45%;
+    margin-right: 60px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 10px rgb(241, 233, 233);
+}
+
+
+
+.values {
+    white-space: pre-wrap;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color: beige;
+}
+
+a {
+    text-decoration: none;
+    background-color: antiquewhite;
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 10px;
+    color: initial;
+    transition: all 0.4s ease-in-out;
+
+}
+
+a:hover {
+    transform: scale(125%);
+    background-color: rgb(72, 67, 67);
+    color: beige
+}
+@media only screen and (max-width: 768px) {
+    
+    ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background:rgb(27, 25, 25);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(95, 87, 87);
+        border-radius: 10px;
+}
+    form {
+        display: grid;
+        
+    }
+
+    .output {
+        max-width: 370px;
+        justify-content: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+        
+    }
+
+    input {
+        background-color: beige;
+        margin-bottom: 4px;
+        border-radius: 5px;
+    }
 }

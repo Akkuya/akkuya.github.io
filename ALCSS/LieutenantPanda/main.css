@@ -36,11 +36,7 @@
   transform: translate(50%, 0) !important;
   
 }
-.banner-content > .avatar {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 50%;
-  
-}
+
 .name-wrapper {
   text-transform: capitalize;
   position: relative;

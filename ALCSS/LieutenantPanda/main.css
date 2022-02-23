@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root {
+  --navbar-link-color: #283f63;
+  --navbar-link-hover-color: #29f0af;
+  --manga-list-color: #64d16f;
+  --anime-list-color: #aa69db;
+}
+
+.nav > .wrap > .links > .link,
+.browse-wrap > .link {
+  color: var(--navbar-link-color);
+}
+.nav > .wrap > .links > .link:hover,
+.browse-wrap > .link:hover {
+  color: var(--navbar-link-hover-color);
+}
+
+.header-wrap {
+  width: 90%;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 4.5%;
+}
+
+.banner-content {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.banner-content > .avatar,
+.name-wrapper,
+.follower-badge,
+.mod-badge-wrap {
+  margin-right: 50% !important;
+  transform: translate(50%, 0) !important;
+  
+}
+.banner-content > .avatar {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  
+}
+.name-wrapper {
+  text-transform: capitalize;
+  position: relative;
+  font-size-adjust: 1;
+  z-index: 1;
+}
+
+
+.mod-badge-wrap {
+  z-index: 2;
+  opacity: 0;
+  margin-top: -45px;
+}
+
+.mod-badge-wrap:hover {
+  margin-top: 0;  
+  opacity: 1;
+}
+
+.actions[data-v-1cc2919e] {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  font-size: xx-large !important;
+  
+}
+
+.actions[data-v-1cc2919e] >.dropdown {
+  display: none;
+}
+
+.nav>.wrap>.logo>img {
+  content: url(https://images-ext-1.discordapp.net/external/yiRLmgs14gJ-kVRUAtYKqGhP0QpQQHTeZT83ok2V-nI/https/i.imgur.com/66QcdKb.png)
+}
+
+.activity-entry {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  box-shadow: 0 0 4px white;
+  clip-path: inset(0px -15px -30px 0px);
+  transition: all 0.2s ease-in-out
+}
+
+.activity-entry:hover {
+  transform: translate(20px) scale(102%);
+}
+.activity-manga_list >.wrap >.list >.details >.status>.title{
+  color: var(--manga-list-color) !important;
+}
+
+.activity-anime_list >.wrap >.list >.details >.status>.title{
+  color: var(--anime-list-color) !important;
+}
+
+.list-stats >.footer {
+  display: none;
+}
+
+
+
+.activity-entry >.wrap >.text >.header >.avatar:hover {
+  transform: scale(140%) rotate(360deg);
+}
+
+.text >.header >.avatar {
+  transition: all 0.6s ease-in-out;
+}
+
+.genre-overview  {
+  background-image: url(https://discord.c99.nl/widget/theme-2/437624111242674177.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+}
+.genre-overview >.genres {
+  visibility: hidden !important;
+}
+.percentage-bar {
+  display: none !important;
+}
+.desktop >.section-header {
+  text-align: center;
+  font-size: 15px;
+}
+.search:before {
+  content: 'Search';
+  color: #435a94;
+  margin-right: 10px;
+  font-family: 'Poppins';
+  border-radius: 50%;
+ 
+}
+.search {
+  display: flex;
+  align-items: flex-end;
+  
+  background-color: #0e1621; 
+  border-radius: 2em;
+  padding: 10px 40px;
+}

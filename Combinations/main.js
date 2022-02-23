@@ -90,7 +90,7 @@ function calc() {
 const calcbtn = document.getElementById('calculate');
 calcbtn.addEventListener('click', calc);
 
-
+    
 document.getElementById("export").addEventListener("click",function(){
     let dataUri = 'data:text/html,' 
         + encodeURIComponent(document.getElementById("values").textContent);

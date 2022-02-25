@@ -1,1 +1,1 @@
-# CSS for my Anilist Profile.
+# CSS for Anilist Profiles that I develop.
